@@ -10,17 +10,9 @@ function clearDisplay() {
 
 function calculate() {
   try {
-  display.value = add()
+  display.value = eval (display.value)
   }
   catch(error) {
     display.value = "Error!"
   }
-}
-
-function add(args) {
-  let sum = 0;
-  for (arg in args) {
-    sum += arg;
-  }
-  return sum;
 }
